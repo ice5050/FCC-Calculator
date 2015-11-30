@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Calculator</title>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/pure-grid.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div class="wrapper">
+    <div class="top">
+      <div class="pure-g screen">
+        <div class="pure-u-6-24"></div>
+        <div class="pure-u-12-24">
+          <p>1234</p>
+        </div>
+        <div class="pure-u-6-24"></div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="control">
+        <div class="pure-g">
+          <div class="pure-u-6-24"></div>
+          <div class="pure-u-4-24"><a href="#" class="cal-btn" data-type="C" data-value="C">C</a></div>
+          <div class="pure-u-2-24"><a href="#" class="cal-btn" data-type="number" data-value="7">7</a></div>
+          <div class="pure-u-2-24"><a href="#" class="cal-btn" data-type="number" data-value="8">8</a></div>
+          <div class="pure-u-2-24"><a href="#" class="cal-btn" data-type="number" data-value="9">9</a></div>
+          <div class="pure-u-2-24"><a href="#" class="cal-btn" data-type="operator" data-value="divide">/</a></div>
+          <div class="pure-u-6-24"></div>
+        </div>
+        <div class="pure-g">
+          <div class="pure-u-6-24"></div>
+          <div class="pure-u-4-24"><a href="#" class="cal-btn" data-type="CE" data-value="CE">CE</a></div>
+          <div class="pure-u-2-24"><a href="#" class="cal-btn" data-type="number" data-value="4">4</a></div>
+          <div class="pure-u-2-24"><a href="#" class="cal-btn" data-type="number" data-value="5">5</a></div>
+          <div class="pure-u-2-24"><a href="#" class="cal-btn" data-type="number" data-value="6">6</a></div>
+          <div class="pure-u-2-24"><a href="#" class="cal-btn" data-type="operator" data-value="multiply">x</a></div>
+          <div class="pure-u-6-24"></div>
+        </div>
+        <div class="pure-g">
+          <div class="pure-u-10-24"></div>
+          <div class="pure-u-2-24"><a href="#" class="cal-btn" data-type="number" data-value="1">1</a></div>
+          <div class="pure-u-2-24"><a href="#" class="cal-btn" data-type="number" data-value="2">2</a></div>
+          <div class="pure-u-2-24"><a href="#" class="cal-btn" data-type="number" data-value="3">3</a></div>
+          <div class="pure-u-2-24"><a href="#" class="cal-btn" data-type="operator" data-value="subtract">-</a></div>
+          <div class="pure-u-6-24"></div>
+        </div>
+        <div class="pure-g">
+          <div class="pure-u-10-24"></div>
+          <div class="pure-u-2-24"><a href="#" class="cal-btn" data-type="number" data-value=".">.</a></div>
+          <div class="pure-u-2-24"><a href="#" class="cal-btn" data-type="number" data-value="0">0</a></div>
+          <div class="pure-u-2-24"><a href="#" class="cal-btn" data-type="eq" data-value="eq">=</a></div>
+          <div class="pure-u-2-24"><a href="#" class="cal-btn" data-type="operator" data-value="add">+</a></div>
+          <div class="pure-u-6-24"></div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

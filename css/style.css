@@ -1,0 +1,63 @@
+html,
+button,
+input,
+select,
+textarea,
+.pure-g [class *= 'pure-u'] {
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+  font-weight: 300;
+  box-sizing: border-box;
+  color: #616161;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+.top {
+  width: 100%;
+  height: 30%;
+  display: table;
+  background-color: #00BCD4;
+}
+
+.bottom {
+  width: 100%;
+  height: 70%;
+}
+
+.screen {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.screen p {
+  text-align: right;
+  font-size: 4.375em;
+  margin: 0;
+  color: #FFFFFF;
+  padding-right: 1em;
+}
+
+.control a {
+  display: block;
+  font-size: 4.375em;
+  margin: 0;
+  text-align: center;
+  transition: all .1s ease-in-out;
+}
+
+.control a:hover {
+  background-color: #EEEEEE;
+}
+
+
