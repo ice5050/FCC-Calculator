@@ -3,6 +3,7 @@ function Calculator(config) {
 
   var self = this;
 
+  this.display = config.display || (function() {});
   this.sum = 0;
   this.operand = 0;
   // Operator = add, subtract, multiply, divide
@@ -43,8 +44,6 @@ function Calculator(config) {
       CE: state3CEHandler
     },
   ];
-
-  this.display = config.display || (function() {});
 
   function state0NumberHandler(numberStr) {
     self.setNumberString(numberStr);
@@ -151,7 +150,7 @@ Calculator.prototype.clear = function() {
 };
 
 Calculator.prototype.setNumberString = function(numberStr) {
-  if ((numberString.indexOf(".") !== -1) && (numberStr === "."))
+  if ((this.numberString.indexOf(".") !== -1) && (numberStr === "."))
     return;
   this.numberString += numberStr;
 };
